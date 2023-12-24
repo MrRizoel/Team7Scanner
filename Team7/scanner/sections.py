@@ -111,8 +111,8 @@ async def rmuser(T7: Client, message: Message):
       return
 
 
-@Client.on_message(filters.user(Owners) & filters.command(["addbot"], ["!", "?", "/", "."]))
-@Client.on_message(filters.user(Devs) & filters.command(["addbot"], ["!", "?", "/", "."]))
+@Client.on_message(filters.user(Owners) & filters.command(["rmbot"], ["!", "?", "/", "."]))
+@Client.on_message(filters.user(Devs) & filters.command(["rmbot"], ["!", "?", "/", "."]))
 async def rm_bot(T7: Client, message: Message):
    bot = await getuser(T7, message)
    if await itsme(message, bot.id):

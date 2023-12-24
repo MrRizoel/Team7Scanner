@@ -78,5 +78,5 @@ else:
    print("[Team7 INFO]: You didn't fill DATABASE_URL")
    sys.exit()
 
-Channel = "Team7_System"
-Support = "Team7_Support_chats"
+Channel = "botupdatex"
+Support = "botsupportx"

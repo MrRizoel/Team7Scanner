@@ -5,6 +5,7 @@ from . import Team7Users, Owners, Devs
 from Team7.functions import scanpass, revertpass, get_urp, getuser, user_in_res, check_reason, scan_user_query
 from pyrogram import filters, Client
 from pyrogram.types import Message 
+from Team7.database import report_db
 
 @Client.on_message(filters.user(Team7Users) & filters.command(["scan"], ["!", "?", "/", "."]))
 async def scan_user(Team7: Client, message: Message):
